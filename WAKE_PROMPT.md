@@ -48,6 +48,8 @@ The connected task writes the receipt `PROTOCOL.md` section 7 describes into its
 not, also ends its chat output with this block, which is what gets pasted into the brain's inbox and filed:
 
     TASK: Bxx  ACCOUNT: accountNN  RUN: <date and time>
+    LOGIN: <the login file this run created, scheduled_tasks/status/<account>/logins/<UTC hour>/<slot>.json, or why not;
+           NOTIFICATIONS: off / not exposed / unchanged, per the tasks you can see>
     MODEL: <the model this run reports itself to be, verbatim, marked self_report; or the scheduler's configured model
            for this task copied from the keeper's inventory row, marked inventory; UNKNOWN if neither>
     THINKING: <the thinking level configured on this task (inventory) or UNKNOWN, then the proxy: wall seconds,
