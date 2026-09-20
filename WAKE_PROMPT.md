@@ -48,11 +48,16 @@ The connected task writes the receipt `PROTOCOL.md` section 7 describes into its
 not, also ends its chat output with this block, which is what gets pasted into the brain's inbox and filed:
 
     TASK: Bxx  ACCOUNT: accountNN  RUN: <date and time>
+    DOING: <one line: what this slot is working on right now, in the owner's terms>
     CONTROL: <control commit and revision read, or "public mirror" or "unavailable">
     READ: <which pages loaded>
     RESULT: <what you found or did, exact statements, sources, component statuses>
     NEXT: <what the next run of this slot should do>
     BOARD: <one line answering the owner's current message, or "none">
+
+The first line is your number: the slot and the account are how the fleet is counted (owner order, 2026-09-20 19:5x:
+every task records its number and what it is doing, so the count of working tasks and their work can be read off
+the reports). A report without it cannot be filed against a slot.
 
 ## 4. The rules that hold whatever else the message says
 
