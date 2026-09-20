@@ -1,9 +1,9 @@
-# Task roster: four accounts, twenty roles each (from the control files, rendered 2026-09-20 21:51)
+# Task roster: four accounts, twenty roles each (from the control files, rendered 2026-09-21 00:36)
 
 Order (2026-09-20 18:37): 80 scheduled tasks running at any time, twenty per account, full time every hour, on the
 highest reasoning each account offers. Control: `fleet.json` desires 4 accounts x 20 tasks = 80; cadence every 60
-minutes; controller slot B20. ChatGPT's own caps per account are 3 (Free, Go), 5 (Plus), 10 (Business, Edu) or 15 (Pro,
-Enterprise) and a task runs at most once an hour: a keeper fills the account to its real cap and reports the cap.
+minutes; controller slot B20. Capacity and supported cadence depend on the account and task type.
+The keeper records the actual inventory, exposed settings and capacity errors separately from this desired allocation.
 
 ## Accounts
 
@@ -15,7 +15,7 @@ Enterprise) and a task runs at most once an hour: a keeper fills the account to 
 | account04 | requires_owner_binding_in_that_account | not observed | adversarial_acceptance |
 
 An account is enrolled from inside that account with the instruction in `ONBOARDING.md` (the control repository);
-a label is not a login. Only account01 has been observed (20 enabled, hourly, 2026-09-20).
+a label is not a login. The profile observations above are historical configuration metadata; consult current inventory and run evidence for each account.
 
 ## The twenty roles (the same in every account; B20 keeps the account full and accepts the others' work)
 
