@@ -32,6 +32,21 @@ publisher mirrors these with `WAKE_PROMPT.md`, `BRAIN_FOR_TASKS.md` and `RESULTS
 without the connector, and any agent anywhere, reads the same words. Every Claude and Codex session on his machine
 gets the control line and his message once an hour through the `[owner-board]` hook.
 
+## The full-brain guide (owner, 2026-09-20 20:1x)
+
+His GPT wrote the implementation guide for the accounts on 2026-09-20 20:0x and he asked (20:1x, *"read all the files
+i just downloaded and help the brain and agent implement it"*) that it be implemented. The guide is
+`FULL_BRAIN_GUIDE.md` in this folder and `scheduled_tasks/FULL_BRAIN_GUIDE.md` in the control repository; the three
+account editions (the same text under a binding header naming account02, 03 or 04 and that account's focus) are under
+`onboarding/`; he pastes an account's edition into a conversation in that account, and that conversation enrolls the
+account's twenty tasks under the protocol. The guide separates the two engines (the typed claim graph of the math_brain
+package and the memory engine of brain.py and spread_recall.py), names the twenty node-firing acceptance tests
+(F01-F20, `node_firing_acceptance.json`, every one NOT_TESTED until a run records evidence in its own receipt), adds
+FIRING and DELIVERY lines to the report block in `WAKE_PROMPT.md`, and lists the private operational folders the
+workers write to (`scheduled_tasks/runs`, `work`, `status`, `leases`). The runtime side (source transport, export
+manifests, adapters, tests) is code work owned by the Codex integration thread of the same evening; this folder holds
+the control layer only. The guide and the acceptance list are published to the mirror; the account editions are not.
+
 ## What a ChatGPT scheduled task is (read 2026-09-20)
 
 From OpenAI's Help Center article "Scheduled tasks in ChatGPT" and the ChatGPT docs on automations: a task is a prompt

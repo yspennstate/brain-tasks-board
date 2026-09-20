@@ -52,12 +52,19 @@ not, also ends its chat output with this block, which is what gets pasted into t
     CONTROL: <control commit and revision read, or "public mirror" or "unavailable">
     READ: <which pages loaded>
     RESULT: <what you found or did, exact statements, sources, component statuses>
+    FIRING: <which of the twenty node-firing tests (F01-F20) you ran, with seeds, paths, gates and reflexes actually
+            observed, or the exact blocker; "none" if your role did not touch them>
     NEXT: <what the next run of this slot should do>
     BOARD: <one line answering the owner's current message, or "none">
+    DELIVERY: <the committed artifact paths or the receipt folder, or the precise save failure>
 
 The first line is your number: the slot and the account are how the fleet is counted (owner order, 2026-09-20 19:5x:
 every task records its number and what it is doing, so the count of working tasks and their work can be read off
-the reports). A report without it cannot be filed against a slot.
+the reports). A report without it cannot be filed against a slot. The FIRING and DELIVERY lines come from the
+full-brain guide (owner, 2026-09-20 20:1x): the guide itself is `scheduled_tasks/FULL_BRAIN_GUIDE.md` in the
+control repository, its account editions are under `scheduled_tasks/onboarding/`, and the twenty tests are
+listed in `scheduled_tasks/node_firing_acceptance.json`, every one NOT_TESTED until a run records evidence in
+its own receipt. A test counts only when it could have failed: a fixture that cannot fail is not a pass.
 
 ## 4. The rules that hold whatever else the message says
 
