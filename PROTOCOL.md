@@ -55,3 +55,52 @@ Include `full_brain_connected: false` unless the required current-run evidence a
 ## 8. Research after the runtime gate
 
 The initial mode is BRAIN_FIRST. Once full readiness is genuinely supported, execute owner-listed external mathematical questions with exact sources, hypotheses, prior-art checks and clear proof-versus-experiment labels. Do not silently revive a previously reassigned campaign, claim novelty from a numerical test, or select sealed benchmark answers. Preserve mathematical results and failures under the existing research privacy/verification policy; the operational-write grant does not publish a new research corpus. Keep model efficacy evaluation separate from engineering acceptance.
+
+## 9. Automatic model and thinking reporting for account02
+
+**MODEL-THINKING-AUTO-2026-09-21-01.** This reporting-only supplement implements the owner's direct request to automate model self-reports and thinking-amount reporting. It applies to the existing account02 B01-B20 workers that read this protocol at every invocation. It does not change assignments, schedules, model selections, notification settings, other accounts, access, or any later stop. Keep the earlier receipt fields; clarify their meaning as follows. Do not divert an invocation into telemetry research or delay substantive work when a field is unavailable.
+
+### Per-run collection
+
+Record `model_self_report` verbatim from this run's own model identity. The owner accepts model self-report for routine reporting; no repeated authenticity audit is required. Add `reasoning_effort_self_report` with the actual thinking-level label known to this run, or `UNKNOWN` when not known. Report both as `self_report`; do not copy a previous worker's identity or turn the requested maximum into an observed setting.
+
+Preserve `reasoning_effort_configured` separately: use a genuinely exposed scheduler/runtime setting or a fresh same-slot inventory observation with its source and observation time. If the inventory lacks this field, its source is stale, or it only repeats prompt text, use `UNKNOWN`. Record the standing maximum preference as `reasoning_effort_requested`, not as configured or consumed effort. Do not infer a ChatGPT Tasks default from an API default or from the model name alone.
+
+Add a `thinking_usage` object to the existing immutable receipt with `reasoning_tokens`, `provider_thinking_seconds`, `source`, and `scope`. Only populate these numeric quantities from legitimate, exposed, user-reportable provider usage/timing data for the identified run or identified completed model responses. Otherwise use JSON null and source `not_exposed`. Missing is not zero. State whether coverage is complete, partial, or unavailable; never present partial response counters as the whole invocation. Do not inspect credentials, protected prompts, or private platform internals to obtain telemetry; do not start a separate paid/API model to measure this worker.
+
+Measure elapsed work automatically using two real clock observations, preferably folded into existing native work. Start at the first available instrumented point and finish at the report snapshot. Preserve `thinking_proxy` for compatibility, but explicitly label it `elapsed_execution_not_pure_thinking`. UTC timestamps and elapsed seconds cover reasoning, output generation, tool execution, network waits, and overhead within the observed window. They do not measure pure thinking. Work before the first observation and after the last is excluded; no backdating to the scheduled dispatch time.
+
+A minimal same-interpreter Python meter is sufficient; retain these variables only for this actual invocation:
+
+```python
+from datetime import datetime, timezone
+from time import monotonic
+
+# At the first instrumented point; meter_run_id is this invocation's existing run ID.
+meter_run_id = run_id
+meter_start_utc = datetime.now(timezone.utc).isoformat()
+meter_start_tick = monotonic()
+
+# At the report snapshot in the SAME interpreter and invocation.
+if meter_run_id != run_id:
+    raise ValueError("meter belongs to a different invocation")
+meter_end_utc = datetime.now(timezone.utc).isoformat()
+elapsed_seconds = round(monotonic() - meter_start_tick, 3)
+```
+
+Equivalent observed UTC subtraction is acceptable with source `utc_clock`; a lost meter, unavailable clock, or invalid interval remains null with a reason. Never sleep, busy-wait, extend tool calls, or add filler to hit a duration. Never estimate thinking tokens from word counts or tokens-per-second assumptions. Count tool calls and saved-report characters only when actually available, with scope; neither is a thinking meter. Do not label elapsed time minus tool time as pure thinking.
+
+### Automatic delivery and aggregation
+
+After the existing TASK/ACCOUNT/RUN line, include this compact header in every normal task report, using actual values or UNKNOWN/NOT_EXPOSED:
+
+```text
+MODEL: <current model self-report>
+THINKING LEVEL: <current level or UNKNOWN>; source=<self_report/runtime/inventory/not_exposed>; requested=<standing preference>
+THINKING USAGE: <reasoning tokens or NOT_EXPOSED>; provider thinking time=<seconds or NOT_EXPOSED>; coverage=<complete/partial/unavailable>
+ELAPSED WORK: <measured seconds or UNAVAILABLE>; scope=<first observation to report snapshot>; not pure thinking
+```
+
+Acknowledge this directive in the existing receipt. Keep all reporting in the existing task conversation and authorized GitHub paths. Do not send email, enable push notifications, create a new task, or replace a worker's substantive deliverable with another reporting-only run.
+
+On each existing B20 invocation, include a compact twenty-row model/thinking table in its normal account02 report and save the same information as `model_thinking_summary.json` beside that run's existing receipt. Use each slot's latest actual receipt and include run ID, observation time, model self-report, self-reported/configured effort and provenance, reasoning-token/timing availability, measured elapsed window, and freshness/acknowledgment status. Name missing or pre-supplement receipts; do not fabricate them or interpret absence as stopped execution. Reuse the current inventory and receipt reads rather than repeatedly searching the archive. Summaries of elapsed durations may include sample count, median, and range when computed from compatible measured windows, always labeled elapsed work, never average thinking time. An instruction committed here is not evidence that a subsequent scheduled worker has already adopted it.
