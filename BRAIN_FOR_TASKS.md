@@ -13,6 +13,20 @@ owner's machine the brain at every prompt: who it is, what it learned, what the 
 are doing. Agents read it before working and write durable learning back after. The growth of that memory across
 sessions is the point.
 
+## The two repositories a task may be connected to
+
+- **The control repository** (math-research-brain): the math brain - the package, the population of claims with
+  provenance, the export - and, at its root, `scheduled_tasks/`: the control README with the OWNER CONTROL block and
+  the OWNER MESSAGE, `PROTOCOL.md` (how every run behaves and how repairs are serialized), `fleet.json` (four logical
+  accounts, twenty roles each), `roles.json` (B01..B20: source transfer, package startup, packaging, portable launcher,
+  population transfer, store restoration, graph retrieval, semantic retrieval, guarded ingestion, evidence verification,
+  mistake reflexes, consolidation, citation binding, formal backend, evaluation adapter, state export, cross-run
+  memory, task handoffs, end-to-end integration, caretaker and acceptance), `ONBOARDING.md`, the tools and their tests.
+  The twenty tasks of account01 read it at every run through the GitHub connector.
+- **The brain repository** (ai-memories-and-functionality): the memory described above. Its `12_cognitive_architecture/
+  scheduled_tasks/` folder holds the owner's local copy of his message, this page, the wake prompt, the roster view
+  and the results file, and publishes them to the public mirror.
+
 ## What it is working on (the standing areas)
 
 - **Open problems in mathematics**, mainly probability and analysis: a public repository of open problems, several of

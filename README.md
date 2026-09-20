@@ -1,4 +1,4 @@
-# The scheduled tasks: eighty GPT tasks that wake into the brain, and the board you talk to them on
+# The scheduled tasks: eighty GPT tasks that wake into the brain, and the one place you talk to them from
 
 Owner order, 2026-09-20 18:37 (his clock), in his words: *"i want a read me about the scheduled tasks, and i want that
 every gpt here wakes up connected to the full brain, also there should be 80 scheduled tasks running at any time, on 4
@@ -6,118 +6,87 @@ different gpt accounts that i have ... any gpt that has access to the scheduled 
 full amount in this account (20 of them) is running full time every hour, solving problems, improving the brain,
 connecting the brain and so on. they should run on the highest computational max thinking that they can. also there
 should be a part of the read me that i can change to talk to all the scheduled tasks and to the gpts that have access to
-the scheduled tasks to read this read me whenever they run and make sure that what i am asking for is being implemented
-... have a whole tasks thing in the brain that the schedules keep reading, that agents like you keep reading, and that i
-can update that will allow me to communicate with the scheduled tasks more easily."*
+the scheduled tasks to read this read me whenever they run ... have a whole tasks thing in the brain that the schedules
+keep reading, that agents like you keep reading, and that i can update"* - and, 18:5x: *"build on top of this and the 3
+documents"*, the control system a GPT session installed the same day.
 
-This folder is that thing. Everything the tasks read lives here; a publisher mirrors the readable part to a public
-repository every fifteen minutes, because a ChatGPT task runs in OpenAI's cloud and can only read what the web can reach.
-The exact paths, commands and task names on the owner's machine are in `OPERATIONS.md`, which stays private.
+## The one place
 
-## The files
+The tasks read **`scheduled_tasks/README.md` on the main branch of the math-research-brain repository** (the control
+repository) at every run: an OWNER CONTROL block (JSON: mode, target per account, cadence, pauses, reasoning
+preference, research queue) and an OWNER MESSAGE block (his words to the whole fleet). Twenty tasks in account01 were
+enrolled on that file on 2026-09-20 15:4x UTC and read it through the GitHub connector at every invocation.
 
-| file | who writes it | who reads it |
-|---|---|---|
-| `OWNER_MESSAGES.md` | **Yitzchak** (nobody else edits his words) | every scheduled task at every run; every Claude and Codex agent on his machine through the `[owner-board]` hook line |
-| `TASK_ROSTER.md` | the keepers (whoever holds an account's task list), agents on his machine | the tasks, to know their slot; the keepers, to keep the count full |
-| `WAKE_PROMPT.md` | the brain | pasted into every scheduled task as its instructions; the task re-reads the published copy each run |
-| `BRAIN_FOR_TASKS.md` | the brain | the tasks: what the brain is, what it is working on, how to report back |
-| `RESULTS.md` | the ingest script, from `inbox/` | agents on his machine, and the tasks (so they build on what other tasks reported) |
-| `inbox/` | Yitzchak or an agent, by pasting a task's report block | the ingest script |
-| `publish_board.py` | the brain | the publish task, every 15 minutes, and anyone by hand |
+He edits it in either of two places, and they stay in step:
 
-Public mirror: **https://github.com/yspennstate/brain-tasks-board** (raw files at
-`https://raw.githubusercontent.com/yspennstate/brain-tasks-board/main/<file>`). Only the six files named in the
-publisher go there, and only after a private-label check and a secret scan pass; the mirror never carries paths on his
-machine, account names, keys, market vocabulary or anything from the private memories.
+- **on GitHub**, the control README itself, between the markers (`OWNER_MESSAGE_START/END`; the JSON between
+  `OWNER_CONTROL_START/END`, revision bumped);
+- **in the brain**, this folder's `OWNER_MESSAGE.md`: plain text, his message only. The sync pushes it into the
+  control README as a new revision within fifteen minutes (or at once: `python board_sync.py`). If both changed since
+  the last sync, GitHub wins and the local text is kept as `OWNER_MESSAGE.conflict.md`; the log says so.
+
+From the control README the sync renders `BOARD.md` (the control summary and his message), `TASK_ROSTER.md` (the
+accounts and the twenty roles from `fleet.json` and `roles.json`), and copies of `PROTOCOL.md` and `roles.json`; the
+publisher mirrors these with `WAKE_PROMPT.md`, `BRAIN_FOR_TASKS.md` and `RESULTS.md` to the public repository
+**https://github.com/yspennstate/brain-tasks-board** (raw files under `.../main/<file>`) so that a task in an account
+without the connector, and any agent anywhere, reads the same words. Every Claude and Codex session on his machine
+gets the control line and his message once an hour through the `[owner-board]` hook.
 
 ## What a ChatGPT scheduled task is (read 2026-09-20)
 
-From OpenAI's Help Center article "Scheduled tasks in ChatGPT" and the ChatGPT docs on automations:
+From OpenAI's Help Center article "Scheduled tasks in ChatGPT" and the ChatGPT docs on automations: a task is a prompt
+ChatGPT runs on a schedule, each run in a **new chat**; **a task cannot run more than once per hour** (hourly is "full
+time" here); **active-task limits per account are Free and Go 3, Plus 5, Business and Edu 10, Pro and Enterprise 15**
+(paused tasks keep their slot); **the model and the reasoning effort can be chosen explicitly** in the app when a task
+is created or edited (the scheduler tool the enrolling GPT used exposed neither selector, so those twenty carry
+"requested highest, observed UNVERIFIED"); a task can browse, use connected tools and run code. The order says twenty
+per account; the largest cap we could read is fifteen. The control keeps the target at twenty, and the keeper fills an
+account to its real cap and reports the cap it hit rather than silently running fewer.
 
-- A scheduled task is a prompt ChatGPT runs on a schedule; each run starts a **new chat** and reports its results there,
-  in the Scheduled view, with an unread indicator; a task can also be one-time or event-triggered (Gmail, Slack, GitHub
-  pull-request activity).
-- **A task cannot run more than once per hour.** Hourly is the fastest schedule, and it is what "full time every hour"
-  means here.
-- **Active-task limits per account depend on the plan: Free and Go 3, Plus 5, Business and Edu 10, Pro and Enterprise
-  15.** Paused tasks still occupy a slot; free a slot by deleting. His order says 20 per account; the largest cap we
-  could read is 15. The roster keeps 20 slots per account as ordered, and the keeper fills an account to its real cap
-  and writes the cap it hit into the roster.
-- The **model and the reasoning effort can be chosen explicitly** when the task is created or edited. His order: the
-  highest reasoning the account offers, on the strongest model available to it.
-- When it runs, a task can **browse the web**, use uploaded context and connected tools, run code, and combine with
-  skills. Browsing is how it reads this board: the raw URLs above.
-- OpenAI's own advice: test the prompt in a normal chat first; make the prompt durable (describe what to do on each run);
-  give the narrowest access that lets the task succeed.
+## The fleet: four accounts, twenty roles each
 
-## The roster: 80 tasks, four accounts, twenty each
-
-| account | slots | who keeps it full |
-|---|---|---|
-| account 1 | A01 .. A20 | the GPT or person with that account's task list |
-| account 2 | B01 .. B20 | same |
-| account 3 | C01 .. C20 | same |
-| account 4 | D01 .. D20 | same |
-
-The slot's letter and number is the task's name inside ChatGPT ("A07 - brain: open questions"), so a keeper can compare
-the account's task list with the roster in one look. `TASK_ROSTER.md` holds, per slot: the area, the schedule (hourly),
-the model and reasoning set, the status, and the last verification (who, when, what the account's real cap turned out
-to be). Areas, in his words: **solving problems** (the open problems), **improving the brain**, **connecting the brain**
-(getting the brain to more agents and places), plus the keeper's own count and audits of what other tasks reported.
+`fleet.json` desires 4 accounts x 20 tasks = 80 hourly registrations; `roles.json` names the twenty roles every account
+carries (B01 source transfer ... B19 end-to-end integration, B20 caretaker and acceptance), and gives each account a
+focus: account01 implementation, account02 independent validation, account03 portability and reproduction, account04
+adversarial acceptance. The mode is `BRAIN_FIRST` until the full math-brain runtime is genuinely operational; `MIXED`
+and `RESEARCH` bring in problem solving from the research queue after that gate. Only account01 has been observed (20
+enabled, hourly). Accounts 2 to 4 are enrolled from inside each account with the instruction in the control
+repository's `ONBOARDING.md`; a label is not a login, and generating specifications creates no task.
 
 ## The keeper rule
 
 *"any gpt that has access to the scheduled tasks should always make sure that the full amount in this account (20 of
-them) is running full time every hour"*. So: whoever opens one of the four accounts - a ChatGPT session, a ChatGPT agent
-run, a person - counts the account's active tasks against its twenty roster slots **every hour**, creates or resumes the
-missing ones from `WAKE_PROMPT.md` with the slot's area, sets the schedule to hourly and the reasoning to the highest
-offered, and writes the count and the cap into `TASK_ROSTER.md` (through the inbox if it cannot edit the brain). A task
-that finds itself unable to run hourly, or a cap below twenty, says so in its report instead of silently doing less.
-
-## The board: how Yitzchak talks to all of them from one place
-
-Edit `OWNER_MESSAGES.md` in this folder. It has two parts: **STANDING ORDERS** (what every task must always do) and
-**MESSAGES** (dated, newest first). Within fifteen minutes the publisher pushes it to the public mirror; every task
-fetches it at the start of every run and acts on it; every agent on his machine gets the newest message once an hour
-through the `[owner-board]` hook. His later words win over an earlier task, on the board as everywhere else. The
-publisher can also be run by hand (see `OPERATIONS.md`).
+them) is running full time every hour"*: B20 in each account, and any GPT or person who can see that account's task
+list, counts the active tasks against the twenty slots every hour by their `BRAIN-FLEET` markers, creates or resumes the
+missing ones from the rendered specifications, and repairs only under the create-only hourly lease `PROTOCOL.md`
+describes: never by deleting an unrelated task, never past an observed platform cap, never against a later pause or
+stop. A count under twenty is reported as such. A fully paused fleet cannot wake itself; that takes his interactive
+action.
 
 ## Waking connected to the brain
 
-Two levels, because the brain itself is private:
+Three levels. Every task, always: the public mirror. A connected task: the control repository through its GitHub
+connector (the tasks of account01 today). The full brain: the brain repository `yspennstate/ai-memories-and-functionality`
+through the same connector once he connects it in an account; `WAKE_PROMPT.md` carries the paragraph to add. The GPTs on
+his machine (Codex sessions) wake connected through the Codex hooks, which emit JSON for Codex since 2026-09-20 18:0x.
 
-1. **Every task, always:** the published set - the board, the roster, `BRAIN_FOR_TASKS.md` (the brain's areas, its
-   current focus, its standing rules in sanitized form) and `RESULTS.md` (what other tasks found). That is what the
-   wake prompt tells a task to read first.
-2. **The full private brain:** ChatGPT's GitHub connector, once Yitzchak connects it in an account, lets a task read the
-   private repository `yspennstate/ai-memories-and-functionality` directly; the wake prompt then names the files to
-   read (the memory index, the brain views, this folder). That is his setup to do per account; until then the tasks
-   have level 1.
+## The way back
 
-The GPTs **on his machine** (Codex sessions) wake connected already: the Codex hooks hand them the brain wake, the
-reflexes, the owner-prompts block and the checklist at every prompt (since 2026-09-20 18:0x they emit JSON, which is
-the only form Codex injects).
+A connected task writes its receipt under `scheduled_tasks/runs/<account>/<slot>/<run>/` in the control repository
+(PROTOCOL.md section 7). Every task also ends its chat output with the report block in `WAKE_PROMPT.md`; paste it into
+`inbox/` here and run the ingest script, which files it into `RESULTS.md` with provenance and prints the command that
+makes a checked result a memory. Agents on his machine read `RESULTS.md` and the run folders.
 
-## The way back: how a task's work reaches the brain
+## The files here
 
-A scheduled task cannot write here. Its run ends with a report block (the format is in `WAKE_PROMPT.md`):
+| file | written by | read by |
+|---|---|---|
+| `OWNER_MESSAGE.md` | **Yitzchak** | the sync, which pushes it into the control README |
+| `BOARD.md`, `TASK_ROSTER.md`, `PROTOCOL.md`, `roles.json` | the sync, from the control README, fleet.json and roles.json | the hook, the mirror, every agent |
+| `WAKE_PROMPT.md`, `BRAIN_FOR_TASKS.md` | the brain | the tasks (mirror), whoever enrolls a task |
+| `RESULTS.md`, `inbox/` | the ingest script, from pasted report blocks | agents, the tasks (mirror) |
+| `board_sync.py`, `publish_board.py`, `ingest_task_result.py`, `SYNC.log`, `PUBLISH.log` | the brain | operations |
 
-    TASK: A07  ACCOUNT: 1  RUN: 2026-09-21 03:00
-    READ: <which pages loaded>
-    RESULT: <what was found or done, with sources>
-    NEXT: <what the next run should do>
-    BOARD: <one line answering the current message, or "none">
-
-Paste it (or ask any agent to) into `inbox/<slot>_<date>.md` and run the ingest script; it appends the block to
-`RESULTS.md` with its provenance and prints the command that makes a checked result a memory. Agents on his machine read
-`RESULTS.md` and file real results as memories in the shared voice. The ChatGPT GitHub connector, once connected, gives
-the tasks a second way back: they can read what others wrote; they still cannot commit.
-
-## Operations, in short
-
-A windowless Windows task publishes this folder's six public files every fifteen minutes after a private-label check
-and a secret scan; a hook hands every Claude and Codex session the board's standing orders and newest message once an
-hour; the ingest script files task reports. Paths, commands, task names and logs: `OPERATIONS.md` (private).
-
+Operations, paths and task names on his machine: `OPERATIONS.md` (private). The GPT's own installation report and
+evidence: the control repository's `scheduled_tasks/status/INSTALLATION.json` and his Downloads of 2026-09-20.
 Memory: `owner_scheduled_tasks_board_and_the_eighty_task_roster_2026_09_20`.

@@ -1,54 +1,49 @@
-# Task roster: four accounts, twenty slots each, hourly, highest reasoning
+# Task roster: four accounts, twenty roles each (from the control files, rendered 2026-09-20 19:04)
 
-Order (2026-09-20 18:37): 80 scheduled tasks running at any time on four accounts, twenty per account, full time every
-hour, on the highest reasoning each account offers. ChatGPT's own cap per account is 3 (Free, Go), 5 (Plus), 10
-(Business, Edu) or 15 (Pro, Enterprise) active tasks, and a task runs at most once an hour; a keeper fills the account
-to its real cap, writes the cap in the account's line, and says so in the report when the cap is under twenty.
-
-Every task is named by its slot inside ChatGPT, e.g. `A07 - brain: open questions`, so a keeper can compare the
-account's task list with this table in one look. Schedule: every hour. Model and reasoning: the strongest and highest
-the account offers, set explicitly when the task is created.
-
-Areas (in his words): **problems** = solving the open problems; **brain** = improving the brain; **connect** = connecting
-the brain (getting it to more agents and places, proposing and testing ways for tasks to read and return more);
-**audit** = checking what other tasks reported in `RESULTS.md`; **keeper** = the hourly count of the account's tasks
-against this roster.
+Order (2026-09-20 18:37): 80 scheduled tasks running at any time, twenty per account, full time every hour, on the
+highest reasoning each account offers. Control: `fleet.json` desires 4 accounts x 20 tasks = 80; cadence every 60
+minutes; controller slot B20. ChatGPT's own caps per account are 3 (Free, Go), 5 (Plus), 10 (Business, Edu) or 15 (Pro,
+Enterprise) and a task runs at most once an hour: a keeper fills the account to its real cap and reports the cap.
 
 ## Accounts
 
-| account | label (his to fill) | plan and cap | keeper | last verified (who, when, active/cap) |
-|---|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
-
-## Slots
-
-The same twenty-slot plan in every account (the areas are spread so that each account carries all five):
-
-| slot | area | task name to use | status |
+| account | binding | observed enabled | focus |
 |---|---|---|---|
-| 01 | keeper | `X01 - keeper: count the tasks` | |
-| 02 | problems | `X02 - problems: open problem, pick the nearest to solved` | |
-| 03 | problems | `X03 - problems: verify a claimed solution line by line` | |
-| 04 | problems | `X04 - problems: literature for one open problem` | |
-| 05 | problems | `X05 - problems: attack one problem for one run` | |
-| 06 | problems | `X06 - problems: counterexample search` | |
-| 07 | brain | `X07 - brain: open questions` | |
-| 08 | brain | `X08 - brain: find contradictions between memories` | |
-| 09 | brain | `X09 - brain: propose one mechanism worth compiling as a reflex` | |
-| 10 | brain | `X10 - brain: audit a recent result in RESULTS.md` | |
-| 11 | brain | `X11 - brain: what the brain should learn next` | |
-| 12 | connect | `X12 - connect: ways for tasks to read more of the brain` | |
-| 13 | connect | `X13 - connect: ways for task results to reach the brain` | |
-| 14 | connect | `X14 - connect: other runtimes and agents that should wake into the brain` | |
-| 15 | audit | `X15 - audit: check three claims from RESULTS.md against sources` | |
-| 16 | audit | `X16 - audit: read the board and report what is not being implemented` | |
-| 17 | problems | `X17 - problems: write up one solved problem for publication` | |
-| 18 | brain | `X18 - brain: improve the wake prompt from what runs report` | |
-| 19 | connect | `X19 - connect: test the board round trip` | |
-| 20 | keeper | `X20 - keeper: second count of the tasks, half an hour after X01` | |
+| account01 | current_connection_verified | 20 | implementation |
+| account02 | requires_owner_binding_in_that_account | not observed | independent_validation |
+| account03 | requires_owner_binding_in_that_account | not observed | portability_and_reproduction |
+| account04 | requires_owner_binding_in_that_account | not observed | adversarial_acceptance |
 
-`X` is the account's letter (A, B, C, D). Status: `running`, `paused`, `missing`, or blank when never verified; the
-keeper updates it, through the inbox when it cannot edit this file.
+An account is enrolled from inside that account with the instruction in `ONBOARDING.md` (the control repository);
+a label is not a login. Only account01 has been observed (20 enabled, hourly, 2026-09-20).
+
+## The twenty roles (the same in every account; B20 keeps the account full and accepts the others' work)
+
+| slot | role | what it does |
+|---|---|---|
+| B01 | Source transfer | Transfer complete source bytes through authorized connectors; verify Git blob hashes, resumable chunks and safe archive handling. |
+| B02 | Package startup | Execute the real eager package initializer with its authentic dependency closure; never count namespace-only imports as full startup. |
+| B03 | Offline packaging | Build reproducible source or wheel artifacts and dependency manifests; test installation in clean native processes without implicit paid ser |
+| B04 | Portable launcher | Implement explicit sandbox paths and a real command-line bootstrap; retain errors and avoid owner-machine defaults. |
+| B05 | Population transfer | Transfer the genuine approved corpus and reconcile row/file hashes and manifest counts; partial samples are not the full corpus. |
+| B06 | Store restoration | Restore real records through production store APIs preserving IDs, schemas, evidence history and statuses; test atomic rejection. |
+| B07 | Graph retrieval | Execute production prefilter, typed-graph retrieval and rendering; verify real edge traversal, warnings, revisions, guards and abstention. |
+| B08 | Semantic retrieval | Run the real semantic encoder with compatible approved vectors; missing models remain blocked, never replaced with random vectors. |
+| B09 | Guarded ingestion | Run the actual allowlist, provenance and ingestion gates on isolated fixtures and approved sources; never weaken a deny rule. |
+| B10 | Evidence verification | Exercise evidence binding and status-transition authority; reject unsupported promotion, wrong digests, stale evidence and replay. |
+| B11 | Mistake reflexes | Persist a scoped mathematical counterexample and demonstrate a later real warning/reflex; check unrelated negative controls. |
+| B12 | Consolidation | Run actual consolidation/replay and revisions; proposals stay quarantined and cannot create truth authority or overwrite history. |
+| B13 | Citation binding | Validate exact sources, locators and claim scope; distinguish structural hash matching from semantic support and human review. |
+| B14 | Formal backend | Run a genuine formal checker through production wrappers when available; separate kernel checking, admitted proofs and prose fidelity. |
+| B15 | Evaluation adapter | Connect actual retrieved memory to a scheduled solver workflow; distinguish current-agent use, mocked transports and isolated model evaluati |
+| B16 | State export | Export and restore complete state safely, retaining identities, graph and evidence history; test corruption and schema mismatches. |
+| B17 | Cross-run memory | Create and recover an actual checkpoint in distinct scheduled invocations; verify identical artifact hashes without reconstructing expected  |
+| B18 | Task handoffs | Implement verified GitHub-backed artifact handoffs and conflict-safe checkpoints across tasks/accounts; never assume shared disks. |
+| B19 | End-to-end integration | Assemble consistent authentic components, execute one complete lifecycle and provide reproducible manifests and evidence for acceptance. |
+| B20 | Caretaker and acceptance | First audit this account inventory and repair authorized drift under the single-writer lease protocol, then independently execute acceptance |
+
+Task name inside ChatGPT: `NN Bxx <role>` (the rendered specification's title, e.g. `02 B01 Source transfer`);
+the prompt carries the marker `BRAIN-FLEET v1 account=accountNN slot=Bxx`, which is how a keeper tells managed
+tasks from unrelated ones. Render every account's twenty specifications with
+`python scheduled_tasks/tools/control.py render --root scheduled_tasks --repository yspennstate/math-research-brain --account accountNN`
+from the control repository's root.
