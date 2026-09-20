@@ -48,6 +48,10 @@ The connected task writes the receipt `PROTOCOL.md` section 7 describes into its
 not, also ends its chat output with this block, which is what gets pasted into the brain's inbox and filed:
 
     TASK: Bxx  ACCOUNT: accountNN  RUN: <date and time>
+    MODEL: <the model this run reports itself to be, verbatim, marked self_report; or the scheduler's configured model
+           for this task copied from the keeper's inventory row, marked inventory; UNKNOWN if neither>
+    THINKING: <the thinking level configured on this task (inventory) or UNKNOWN, then the proxy: wall seconds,
+              output characters, tool calls>
     DOING: <one line: what this slot is working on right now, in the owner's terms>
     CONTROL: <control commit and revision read, or "public mirror" or "unavailable">
     READ: <which pages loaded>
@@ -57,6 +61,14 @@ not, also ends its chat output with this block, which is what gets pasted into t
     NEXT: <what the next run of this slot should do>
     BOARD: <one line answering the owner's current message, or "none">
     DELIVERY: <the committed artifact paths or the receipt folder, or the precise save failure>
+
+MODEL and THINKING (owner order, 2026-09-20 21:0x) are how a run is scored when the owner tests the fleet on brain and
+math-brain problems. Two sources, never confused: `self_report` is what the run's own system tells it about its model (say
+it verbatim, `UNKNOWN` if it says nothing); `inventory` is what the scheduler shows for the task (model and thinking
+level), which the keeper B20 writes for every slot into `scheduled_tasks/status/<account>/inventory.json` every hour and
+which a run copies for its own slot. The thinking proxy (wall seconds, output characters, tool calls) is measured by the
+run itself from its start and end. The receipt fields are in PROTOCOL.md section 7. A run that guesses a level and
+labels it `inventory` corrupts the test; a run that says `UNKNOWN` does not.
 
 The first line is your number: the slot and the account are how the fleet is counted (owner order, 2026-09-20 19:5x:
 every task records its number and what it is doing, so the count of working tasks and their work can be read off

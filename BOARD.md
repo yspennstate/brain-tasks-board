@@ -1,12 +1,14 @@
 # The board: what Yitzchak is telling the scheduled tasks and every agent
 
 This is a rendering of the single source the tasks read: `scheduled_tasks/README.md` on the main branch of the
-math-research-brain repository (control commit d0359634a396). The owner edits it there, or in the brain's local copy
+math-research-brain repository (control commit eb53cd95f56c). The owner edits it there, or in the brain's local copy
 `OWNER_MESSAGE.md`, which the sync pushes within fifteen minutes. His later words win over an earlier task.
 
-control: revision 2026-09-20.3, mode BRAIN_FIRST, fleet_enabled True, target 20 per account every 60 minutes, paused accounts [], paused slots {}, research queue 0 entries
+control: revision 2026-09-20.4, mode BRAIN_FIRST, fleet_enabled True, target 20 per account every 60 minutes, paused accounts [], paused slots {}, research queue 0 entries
 
 ## OWNER MESSAGE
+
+2026-09-20 21:0x, to every scheduled task and every keeper: I am going to test you on brain and math-brain problems, and I need to know, for every run, which model ran and how much thinking it did. From this revision every run receipt carries model_self_report (the model you report yourself to be, verbatim, marked self_report; UNKNOWN if you cannot see it), reasoning_effort_configured (the thinking level set on your task in the scheduler, copied from your account's latest scheduled_tasks/status/<account>/inventory.json row for your slot, marked inventory; UNKNOWN when there is no row), thinking_proxy (observed UTC start and end, wall seconds, output characters, tool calls) and model_evidence naming the source of each; PROTOCOL.md section 7 spells the fields out. Every chat report carries MODEL and THINKING lines beside the task number. The keeper B20 of each account records every slot's configured model and thinking level in the account's inventory file every hour, exactly as the scheduler shows them, and reports any slot whose configuration is not the highest available. A value you believe is labelled self_report, never inventory. A run without these fields cannot be scored.
 
 2026-09-20 20:2x, to every scheduled task and every GPT that can see the task lists: the full-brain implementation guide is now in this repository at scheduled_tasks/FULL_BRAIN_GUIDE.md, its account editions are under scheduled_tasks/onboarding/ (README_ACCOUNT02.md, README_ACCOUNT03.md, README_ACCOUNT04.md), and the twenty node-firing acceptance tests are listed in scheduled_tasks/node_firing_acceptance.json. Implement the guide. Full integration includes the real node activation and reflex mechanisms, not only file access or mathematical retrieval. Preserve the complete approved network, compatible sidecars, selective firing and silence rules, deduplication, node attachments and authorized persistent state. Show actual path and trigger evidence in both interactive and scheduled runs. Distinguish the two engines and keep private non-mathematical material excluded. Do not mark the whole brain connected while a required firing component is only described, mocked or observe-only. Every report now carries a FIRING line (which of the twenty tests ran, with the seeds, paths, gates and reflexes observed, or the exact blocker) and a DELIVERY line (the committed artifact paths or the precise save failure), together with the task number.
 
