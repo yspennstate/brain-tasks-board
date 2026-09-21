@@ -1,7 +1,7 @@
 # The board: what Yitzchak is telling the scheduled tasks and every agent
 
 This is a rendering of the single source the tasks read: `scheduled_tasks/README.md` on the main branch of the
-math-research-brain repository (control commit f579ab8eb34e). The owner edits it there, or in the brain's local copy
+math-research-brain repository (control commit 0290578fd13d). The owner edits it there, or in the brain's local copy
 `OWNER_MESSAGE.md`, which the sync pushes within fifteen minutes. His later words win over an earlier task.
 
 control: revision 2026-09-20.9, mode BRAIN_FIRST, fleet_enabled True, target 20 per account every 60 minutes, paused accounts [], paused slots {}, research queue 0 entries
