@@ -1,105 +1,199 @@
 {
   "schema_version": 1,
+  "assignment_revision": "QFORM-DENSITY-3EIG-20260922",
+  "activation_control_revision": "2026-09-22.5",
+  "directive_path": "scheduled_tasks/work/shared/qform-density-2026-09-22/ORDER.md",
+  "assignment_matrix_path": "scheduled_tasks/work/shared/qform-density-2026-09-22/ASSIGNMENTS.json",
+  "state_manifest": "scheduled_tasks/work/shared/qform-density-2026-09-22/MANIFEST.json",
+  "allocation_status": "OWNER_DIRECTED_ALL_QFORM_NATIVE_ROLLOUT_SEPARATE",
+  "intended_counts_per_account": {
+    "QFORM": 20
+  },
+  "intended_global_counts": {
+    "QFORM": 80
+  },
+  "dedicated_installation_slots": 0,
+  "dedicated_benchmark_slots": 0,
   "roles": [
     {
       "slot": "B01",
-      "title": "Source transfer",
-      "assignment": "Transfer complete source bytes through authorized connectors; verify Git blob hashes, resumable chunks and safe archive handling."
+      "title": "Oscillatory replacement",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "FOURIER",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B01.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B02",
-      "title": "Package startup",
-      "assignment": "Execute the real eager package initializer with its authentic dependency closure; never count namespace-only imports as full startup."
+      "title": "Integrated Fourier estimate",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "FOURIER",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B02.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B03",
-      "title": "Offline packaging",
-      "assignment": "Build reproducible source or wheel artifacts and dependency manifests; test installation in clean native processes without implicit paid services."
+      "title": "Decoupled time integral",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "FOURIER",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B03.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B04",
-      "title": "Portable launcher",
-      "assignment": "Implement explicit sandbox paths and a real command-line bootstrap; retain errors and avoid owner-machine defaults."
+      "title": "Product Fourier rearrangement",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "FOURIER",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B04.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B05",
-      "title": "Population transfer",
-      "assignment": "Transfer the genuine approved corpus and reconcile row/file hashes and manifest counts; partial samples are not the full corpus."
+      "title": "Quadratic coarea bound",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "GEOMETRY",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B05.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B06",
-      "title": "Store restoration",
-      "assignment": "Restore real records through production store APIs preserving IDs, schemas, evidence history and statuses; test atomic rejection."
+      "title": "Curved fiber integration",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "GEOMETRY",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B06.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B07",
-      "title": "Graph retrieval",
-      "assignment": "Execute production prefilter, typed-graph retrieval and rendering; verify real edge traversal, warnings, revisions, guards and abstention."
+      "title": "Coordinate minor selection",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "GEOMETRY",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B07.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B08",
-      "title": "Semantic retrieval",
-      "assignment": "Run the real semantic encoder with compatible approved vectors; missing models remain blocked, never replaced with random vectors."
+      "title": "Diffuse eigenvector case",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "GEOMETRY",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B08.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B09",
-      "title": "Guarded ingestion",
-      "assignment": "Run the actual allowlist, provenance and ingestion gates on isolated fixtures and approved sources; never weaken a deny rule."
+      "title": "Bilinear block mechanism",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "GEOMETRY",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B09.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B10",
-      "title": "Evidence verification",
-      "assignment": "Exercise evidence binding and status-transition authority; reject unsupported promotion, wrong digests, stale evidence and replay."
+      "title": "Rank-three coupled case",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "GEOMETRY",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B10.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B11",
-      "title": "Mistake reflexes",
-      "assignment": "Persist a scoped mathematical counterexample and demonstrate a later real warning/reflex; check unrelated negative controls."
+      "title": "Indefinite signatures",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "GEOMETRY",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B11.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B12",
-      "title": "Consolidation",
-      "assignment": "Run actual consolidation/replay and revisions; proposals stay quarantined and cannot create truth authority or overwrite history."
+      "title": "Additional eigenvalue control",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "GEOMETRY",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B12.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B13",
-      "title": "Citation binding",
-      "assignment": "Validate exact sources, locators and claim scope; distinguish structural hash matching from semantic support and human review."
+      "title": "Extremal product laws",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "STRUCTURE",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B13.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B14",
-      "title": "Formal backend",
-      "assignment": "Run a genuine formal checker through production wrappers when available; separate kernel checking, admitted proofs and prose fidelity."
+      "title": "Translations and localization",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "STRUCTURE",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B14.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B15",
-      "title": "Evaluation adapter",
-      "assignment": "Connect actual retrieved memory to a scheduled solver workflow; distinguish current-agent use, mocked transports and isolated model evaluation."
+      "title": "Absolute continuity and regularity",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "STRUCTURE",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B15.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B16",
-      "title": "State export",
-      "assignment": "Export and restore complete state safely, retaining identities, graph and evidence history; test corruption and schema mismatches."
+      "title": "Projection-product interaction",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "STRUCTURE",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B16.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B17",
-      "title": "Cross-run memory",
-      "assignment": "Create and recover an actual checkpoint in distinct scheduled invocations; verify identical artifact hashes without reconstructing expected answers."
+      "title": "Sharp constant and witnesses",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "STRUCTURE",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B17.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B18",
-      "title": "Task handoffs",
-      "assignment": "Implement verified GitHub-backed artifact handoffs and conflict-safe checkpoints across tasks/accounts; never assume shared disks."
+      "title": "Literature-to-proof transfer",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "STRUCTURE",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B18.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B19",
-      "title": "End-to-end integration",
-      "assignment": "Assemble consistent authentic components, execute one complete lifecycle and provide reproducible manifests and evidence for acceptance."
+      "title": "Universal proof assembly",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "SYNTHESIS",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B19.json",
+      "secondary_keeper_duty": false
     },
     {
       "slot": "B20",
-      "title": "Caretaker and acceptance",
-      "assignment": "First audit this account inventory and repair authorized drift under the single-writer lease protocol, then independently execute acceptance tests."
+      "title": "Proof closure and keeper",
+      "workstream": "QFORM",
+      "campaign": "QFORM",
+      "pathway": "SYNTHESIS",
+      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B20.json",
+      "secondary_keeper_duty": true
     }
   ]
 }
