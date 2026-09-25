@@ -1,4 +1,4 @@
-# Task roster: four accounts, twenty roles each (from the control files, rendered 2026-09-25 12:53)
+# Task roster: four accounts, twenty roles each (from the control files, rendered 2026-09-25 13:07)
 
 Order (2026-09-20 18:37): 80 scheduled tasks running at any time, twenty per account, full time every hour, on the
 highest reasoning each account offers. Control: `fleet.json` desires 4 accounts x 20 tasks = 80; cadence every 60
@@ -9,10 +9,10 @@ The keeper records the actual inventory, exposed settings and capacity errors se
 
 | account | binding | observed enabled | focus |
 |---|---|---|---|
-| account01 | CURRENT_NATIVE_SCHEDULER_NOT_OBSERVED_THIS_UPDATE | not observed | Exclusive repeated full-manuscript line audits: forward derivation and reverse dependency checks |
-| account02 | CURRENT_NATIVE_SCHEDULER_NOT_OBSERVED_THIS_UPDATE | not observed | Exclusive repeated full-manuscript line audits: adversarial falsification and boundary cases |
-| account03 | CURRENT_NATIVE_SCHEDULER_PROFILE_OBSERVED | 20 | Exclusive repeated full-manuscript line audits: exact identities, constants and alternative derivations |
-| account04 | CURRENT_NATIVE_SCHEDULER_NOT_OBSERVED_THIS_UPDATE | not observed | Exclusive repeated full-manuscript line audits: independent reconstruction and disagreement resolution |
+| account01 | CURRENT_NATIVE_SCHEDULER_NOT_OBSERVED_THIS_UPDATE | not observed | Repeated full repaired-manuscript audits; forward derivation and reverse dependency checks |
+| account02 | CURRENT_NATIVE_SCHEDULER_NOT_OBSERVED_THIS_UPDATE | not observed | Repeated full repaired-manuscript audits; adversarial and boundary cases |
+| account03 | CURRENT_NATIVE_SCHEDULER_NOT_OBSERVED_THIS_UPDATE | not observed | Repeated full repaired-manuscript audits; identities, constants and alternative derivations |
+| account04 | CURRENT_NATIVE_SCHEDULER_PROFILE_OBSERVED | 20 | Mandatory repeated full repaired-manuscript audits; old three-value discovery superseded |
 
 An account is enrolled from inside that account with the instruction in `ONBOARDING.md` (the control repository);
 a label is not a login. The profile observations above are historical configuration metadata; consult current inventory and run evidence for each account.
@@ -21,26 +21,26 @@ a label is not a login. The profile observations above are historical configurat
 
 | slot | role | what it does |
 |---|---|---|
-| B01 | Theorem and dependency audit |  |
-| B02 | Fourier and half-potential audit |  |
+| B01 | Repaired theorem and dependency audit |  |
+| B02 | Fourier and negative moment audit |  |
 | B03 | Conditioning and independence audit |  |
-| B04 | Heat-flow proof audit |  |
-| B05 | Product-projection proof audit |  |
-| B06 | Holder and entropy audit |  |
-| B07 | Crossing-volume identity audit |  |
-| B08 | Complex-measure and Jensen audit |  |
-| B09 | Mollification and convergence audit |  |
-| B10 | Exact numerical-constant audit |  |
-| B11 | Schur and singular-value audit |  |
-| B12 | Scalar and potential-kernel audit |  |
-| B13 | Two-coordinate chart and tail audit |  |
-| B14 | Measurability and rough-law audit |  |
-| B15 | Density existence and inversion audit |  |
-| B16 | Random-sign spectral proof audit |  |
-| B17 | Final cases and threshold-boundary audit |  |
-| B18 | Imported-hypothesis and reference audit |  |
-| B19 | Independent end-to-end reconstruction audit |  |
-| B20 | Independent audit and own-account coordination |  |
+| B04 | Heat-flow proof and limits audit |  |
+| B05 | Projection and zero-density domain audit |  |
+| B06 | Integrated Fourier powers audit |  |
+| B07 | Gram and padded singular-index audit |  |
+| B08 | Entropy and row-promotion audit |  |
+| B09 | Complex measure and L2 measurability audit |  |
+| B10 | Random-sign extraction audit |  |
+| B11 | Schur threshold and singular-limit audit |  |
+| B12 | Scalar critical-value density audit |  |
+| B13 | Definite-pair chart and null seam audit |  |
+| B14 | Hyperbolic tails and critical level audit |  |
+| B15 | Rearrangement and extended kernels audit |  |
+| B16 | Full half-potential dependency audit |  |
+| B17 | Constants final cases and scaling audit |  |
+| B18 | All-report reconciliation and reference audit |  |
+| B19 | Independent repaired-source end-to-end audit |  |
+| B20 | Whole-paper audit and own-account coordination |  |
 
 Task name inside ChatGPT: `NN Bxx <role>` (the rendered specification's title, e.g. `02 B01 Source transfer`);
 the prompt carries the marker `BRAIN-FLEET v1 account=accountNN slot=Bxx`, which is how a keeper tells managed
