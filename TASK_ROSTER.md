@@ -1,4 +1,4 @@
-# Task roster: four accounts, twenty roles each (from the control files, rendered 2026-09-25 03:27)
+# Task roster: four accounts, twenty roles each (from the control files, rendered 2026-09-25 03:36)
 
 Order (2026-09-20 18:37): 80 scheduled tasks running at any time, twenty per account, full time every hour, on the
 highest reasoning each account offers. Control: `fleet.json` desires 4 accounts x 20 tasks = 80; cadence every 60
@@ -9,10 +9,10 @@ The keeper records the actual inventory, exposed settings and capacity errors se
 
 | account | binding | observed enabled | focus |
 |---|---|---|---|
-| account01 | CURRENT_AUTHENTICATION_NOT_OBSERVED_IN_THIS_UPDATE | not observed | Quadratic-form bounded density: analytic derivation and exact structural identities |
-| account02 | CURRENT_AUTHENTICATION_NOT_OBSERVED_IN_THIS_UPDATE | not observed | Quadratic-form bounded density: complementary constructions and source-valid counterexamples |
-| account03 | CURRENT_AUTHENTICATION_NOT_OBSERVED_IN_THIS_UPDATE | not observed | Quadratic-form bounded density: quantitative inequalities and rigorous computations |
-| account04 | CURRENT_NATIVE_CONNECTION_OBSERVED | 20 | Quadratic-form bounded density: alternative proof mechanisms and complete-argument integration |
+| account01 | CURRENT_NATIVE_SCHEDULER_NOT_OBSERVED_THIS_UPDATE | not observed | Exclusive repeated full-manuscript line audits: forward derivation and reverse dependency checks |
+| account02 | CURRENT_NATIVE_SCHEDULER_NOT_OBSERVED_THIS_UPDATE | not observed | Exclusive repeated full-manuscript line audits: adversarial falsification and boundary cases |
+| account03 | CURRENT_NATIVE_SCHEDULER_PROFILE_OBSERVED | 20 | Exclusive repeated full-manuscript line audits: exact identities, constants and alternative derivations |
+| account04 | CURRENT_NATIVE_SCHEDULER_NOT_OBSERVED_THIS_UPDATE | not observed | Exclusive repeated full-manuscript line audits: independent reconstruction and disagreement resolution |
 
 An account is enrolled from inside that account with the instruction in `ONBOARDING.md` (the control repository);
 a label is not a login. The profile observations above are historical configuration metadata; consult current inventory and run evidence for each account.
@@ -21,26 +21,26 @@ a label is not a login. The profile observations above are historical configurat
 
 | slot | role | what it does |
 |---|---|---|
-| B01 | Oscillatory replacement |  |
-| B02 | Integrated Fourier estimate |  |
-| B03 | Decoupled time integral |  |
-| B04 | Product Fourier rearrangement |  |
-| B05 | Quadratic coarea bound |  |
-| B06 | Curved fiber integration |  |
-| B07 | Coordinate minor selection |  |
-| B08 | Diffuse eigenvector case |  |
-| B09 | Bilinear block mechanism |  |
-| B10 | Rank-three coupled case |  |
-| B11 | Indefinite signatures |  |
-| B12 | Additional eigenvalue control |  |
-| B13 | Extremal product laws |  |
-| B14 | Translations and localization |  |
-| B15 | Absolute continuity and regularity |  |
-| B16 | Projection-product interaction |  |
-| B17 | Sharp constant and witnesses |  |
-| B18 | Literature-to-proof transfer |  |
-| B19 | Universal proof assembly |  |
-| B20 | Proof closure and keeper |  |
+| B01 | Theorem and dependency audit |  |
+| B02 | Fourier and half-potential audit |  |
+| B03 | Conditioning and independence audit |  |
+| B04 | Heat-flow proof audit |  |
+| B05 | Product-projection proof audit |  |
+| B06 | Holder and entropy audit |  |
+| B07 | Crossing-volume identity audit |  |
+| B08 | Complex-measure and Jensen audit |  |
+| B09 | Mollification and convergence audit |  |
+| B10 | Exact numerical-constant audit |  |
+| B11 | Schur and singular-value audit |  |
+| B12 | Scalar and potential-kernel audit |  |
+| B13 | Two-coordinate chart and tail audit |  |
+| B14 | Measurability and rough-law audit |  |
+| B15 | Density existence and inversion audit |  |
+| B16 | Random-sign spectral proof audit |  |
+| B17 | Final cases and threshold-boundary audit |  |
+| B18 | Imported-hypothesis and reference audit |  |
+| B19 | Independent end-to-end reconstruction audit |  |
+| B20 | Independent audit and own-account coordination |  |
 
 Task name inside ChatGPT: `NN Bxx <role>` (the rendered specification's title, e.g. `02 B01 Source transfer`);
 the prompt carries the marker `BRAIN-FLEET v1 account=accountNN slot=Bxx`, which is how a keeper tells managed

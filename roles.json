@@ -1,199 +1,40 @@
 {
   "schema_version": 1,
-  "assignment_revision": "QFORM-DENSITY-3EIG-20260922",
-  "activation_control_revision": "2026-09-22.5",
-  "directive_path": "scheduled_tasks/work/shared/qform-density-2026-09-22/ORDER.md",
-  "assignment_matrix_path": "scheduled_tasks/work/shared/qform-density-2026-09-22/ASSIGNMENTS.json",
-  "state_manifest": "scheduled_tasks/work/shared/qform-density-2026-09-22/MANIFEST.json",
-  "allocation_status": "OWNER_DIRECTED_ALL_QFORM_NATIVE_ROLLOUT_SEPARATE",
-  "intended_counts_per_account": {
-    "QFORM": 20
-  },
-  "intended_global_counts": {
-    "QFORM": 80
-  },
+  "assignment_revision": "QFORM-FIVE-SINGULAR-VALUES-LINE-AUDIT-20260925",
+  "activation_control_revision": "2026-09-25.1",
+  "directive_path": "scheduled_tasks/work/shared/five-singular-values-audit-2026-09-25/ORDER.md",
+  "assignment_matrix_path": "scheduled_tasks/work/shared/five-singular-values-audit-2026-09-25/ASSIGNMENTS.json",
+  "state_manifest": "scheduled_tasks/work/shared/five-singular-values-audit-2026-09-25/MANIFEST.json",
+  "allocation_status": "OWNER_DIRECTED_ALL_80_AUDIT_ONLY; native adoption evidence separate",
+  "intended_counts_per_account": {"QFORM":20},
+  "intended_global_counts": {"QFORM":80},
   "dedicated_installation_slots": 0,
   "dedicated_benchmark_slots": 0,
+  "all_roles_full_manuscript": true,
+  "repeat_until_later_owner_instruction": true,
   "roles": [
-    {
-      "slot": "B01",
-      "title": "Oscillatory replacement",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "FOURIER",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B01.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B02",
-      "title": "Integrated Fourier estimate",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "FOURIER",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B02.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B03",
-      "title": "Decoupled time integral",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "FOURIER",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B03.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B04",
-      "title": "Product Fourier rearrangement",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "FOURIER",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B04.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B05",
-      "title": "Quadratic coarea bound",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "GEOMETRY",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B05.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B06",
-      "title": "Curved fiber integration",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "GEOMETRY",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B06.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B07",
-      "title": "Coordinate minor selection",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "GEOMETRY",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B07.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B08",
-      "title": "Diffuse eigenvector case",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "GEOMETRY",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B08.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B09",
-      "title": "Bilinear block mechanism",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "GEOMETRY",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B09.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B10",
-      "title": "Rank-three coupled case",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "GEOMETRY",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B10.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B11",
-      "title": "Indefinite signatures",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "GEOMETRY",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B11.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B12",
-      "title": "Additional eigenvalue control",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "GEOMETRY",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B12.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B13",
-      "title": "Extremal product laws",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "STRUCTURE",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B13.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B14",
-      "title": "Translations and localization",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "STRUCTURE",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B14.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B15",
-      "title": "Absolute continuity and regularity",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "STRUCTURE",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B15.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B16",
-      "title": "Projection-product interaction",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "STRUCTURE",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B16.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B17",
-      "title": "Sharp constant and witnesses",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "STRUCTURE",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B17.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B18",
-      "title": "Literature-to-proof transfer",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "STRUCTURE",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B18.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B19",
-      "title": "Universal proof assembly",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "SYNTHESIS",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B19.json",
-      "secondary_keeper_duty": false
-    },
-    {
-      "slot": "B20",
-      "title": "Proof closure and keeper",
-      "workstream": "QFORM",
-      "campaign": "QFORM",
-      "pathway": "SYNTHESIS",
-      "assignment_card_template": "scheduled_tasks/work/shared/qform-density-2026-09-22/assignments/<account>/B20.json",
-      "secondary_keeper_duty": true
-    }
-  ]
+    {"slot":"B01","title":"Theorem and dependency audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B02","title":"Fourier and half-potential audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B03","title":"Conditioning and independence audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B04","title":"Heat-flow proof audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B05","title":"Product-projection proof audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B06","title":"Holder and entropy audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B07","title":"Crossing-volume identity audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B08","title":"Complex-measure and Jensen audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B09","title":"Mollification and convergence audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B10","title":"Exact numerical-constant audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B11","title":"Schur and singular-value audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B12","title":"Scalar and potential-kernel audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B13","title":"Two-coordinate chart and tail audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B14","title":"Measurability and rough-law audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B15","title":"Density existence and inversion audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B16","title":"Random-sign spectral proof audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B17","title":"Final cases and threshold-boundary audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B18","title":"Imported-hypothesis and reference audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B19","title":"Independent end-to-end reconstruction audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
+    {"slot":"B20","title":"Independent audit and own-account coordination","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":true}
+  ],
+  "assignment_card_rule": "Read assignment_matrix_path and select own account and slot. The initial lens only chooses where to start; every worker must audit every source line/clause and repeat complete passes.",
+  "legacy_assignment_cards": "Preserved historical work, not current task authority. No discovery or threshold-improvement role remains active.",
+  "historical_roles_source": "e36ed866a5e7410e129b40360a3a0cc56102dfb5:scheduled_tasks/roles.json"
 }
