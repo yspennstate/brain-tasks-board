@@ -1,4 +1,4 @@
-# Task roster: four accounts, twenty roles each (from the control files, rendered 2026-09-25 21:36)
+# Task roster: four accounts, twenty roles each (from the control files, rendered 2026-09-26 06:21)
 
 Order (2026-09-20 18:37): 80 scheduled tasks running at any time, twenty per account, full time every hour, on the
 highest reasoning each account offers. Control: `fleet.json` desires 4 accounts x 20 tasks = 80; cadence every 60
@@ -21,26 +21,26 @@ a label is not a login. The profile observations above are historical configurat
 
 | slot | role | what it does |
 |---|---|---|
-| B01 | Repaired theorem and dependency audit |  |
-| B02 | Fourier and negative moment audit |  |
-| B03 | Conditioning and independence audit |  |
-| B04 | Heat-flow proof and limits audit |  |
-| B05 | Projection and zero-density domain audit |  |
-| B06 | Integrated Fourier powers audit |  |
-| B07 | Gram and padded singular-index audit |  |
-| B08 | Entropy and row-promotion audit |  |
-| B09 | Complex measure and L2 measurability audit |  |
-| B10 | Random-sign extraction audit |  |
-| B11 | Schur threshold and singular-limit audit |  |
-| B12 | Scalar critical-value density audit |  |
-| B13 | Definite-pair chart and null seam audit |  |
-| B14 | Hyperbolic tails and critical level audit |  |
-| B15 | Rearrangement and extended kernels audit |  |
-| B16 | Full half-potential dependency audit |  |
-| B17 | Constants final cases and scaling audit |  |
-| B18 | All-report reconciliation and reference audit |  |
-| B19 | Independent repaired-source end-to-end audit |  |
-| B20 | Whole-paper audit and own-account coordination |  |
+| B01 | Architecture and claims inventory |  |
+| B02 | Memory recall engine |  |
+| B03 | Association graph and edges |  |
+| B04 | Reflexes and instincts |  |
+| B05 | Hooks and delivery |  |
+| B06 | Dreaming and consolidation |  |
+| B07 | The math brain claim graph |  |
+| B08 | Brain-on versus brain-off evidence |  |
+| B09 | The paper, claim by claim |  |
+| B10 | The paper's mathematics |  |
+| B11 | Related work and novelty |  |
+| B12 | How to test the brain's strengths more |  |
+| B13 | Mistakes and scars |  |
+| B14 | Owner orders reaching action |  |
+| B15 | Coordination |  |
+| B16 | Cost and efficiency |  |
+| B17 | Privacy, security and sanitisation |  |
+| B18 | Portability and reproducibility |  |
+| B19 | Synthesis for publication |  |
+| B20 | Gap finder and keeper |  |
 
 Task name inside ChatGPT: `NN Bxx <role>` (the rendered specification's title, e.g. `02 B01 Source transfer`);
 the prompt carries the marker `BRAIN-FLEET v1 account=accountNN slot=Bxx`, which is how a keeper tells managed

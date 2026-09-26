@@ -1,41 +1,185 @@
 {
   "schema_version": 1,
-  "assignment_revision": "QFORM-FIVE-270-REPAIRED-AUDIT-20260925",
-  "activation_control_revision": "2026-09-25.2",
-  "directive_path": "scheduled_tasks/work/shared/five-singular-values-repaired-audit-2026-09-25/ORDER.md",
-  "assignment_matrix_path": "scheduled_tasks/work/shared/five-singular-values-repaired-audit-2026-09-25/ASSIGNMENTS.json",
-  "state_manifest": "scheduled_tasks/work/shared/five-singular-values-repaired-audit-2026-09-25/MANIFEST.json",
-  "allocation_status": "OWNER_DIRECTED_ALL_80_REPAIRED_AUDIT_ONLY; account04 explicitly included; native adoption evidence separate",
-  "intended_counts_per_account": {"QFORM":20},
-  "intended_global_counts": {"QFORM":80},
+  "assignment_revision": "BRAIN-AUDIT-READONLY-20260925",
+  "activation_control_revision": "2026-09-25.4",
+  "directive_path": "scheduled_tasks/work/shared/brain-audit-2026-09-25/ORDER.md",
+  "assignment_matrix_path": "scheduled_tasks/work/shared/brain-audit-2026-09-25/ASSIGNMENTS.json",
+  "state_manifest": "scheduled_tasks/work/shared/brain-audit-2026-09-25/MANIFEST.json",
+  "allocation_status": "OWNER_DIRECTED_ALL_80_BRAIN_AUDIT_READ_ONLY; every account and slot; hourly; no changes",
+  "intended_counts_per_account": {
+    "BRAIN_AUDIT": 20
+  },
+  "intended_global_counts": {
+    "BRAIN_AUDIT": 80
+  },
   "dedicated_installation_slots": 0,
   "dedicated_benchmark_slots": 0,
-  "all_roles_full_manuscript": true,
+  "all_roles_full_manuscript": false,
   "repeat_until_later_owner_instruction": true,
   "roles": [
-    {"slot":"B01","title":"Repaired theorem and dependency audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B02","title":"Fourier and negative moment audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B03","title":"Conditioning and independence audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B04","title":"Heat-flow proof and limits audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B05","title":"Projection and zero-density domain audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B06","title":"Integrated Fourier powers audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B07","title":"Gram and padded singular-index audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B08","title":"Entropy and row-promotion audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B09","title":"Complex measure and L2 measurability audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B10","title":"Random-sign extraction audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B11","title":"Schur threshold and singular-limit audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B12","title":"Scalar critical-value density audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B13","title":"Definite-pair chart and null seam audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B14","title":"Hyperbolic tails and critical level audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B15","title":"Rearrangement and extended kernels audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B16","title":"Full half-potential dependency audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B17","title":"Constants final cases and scaling audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B18","title":"All-report reconciliation and reference audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B19","title":"Independent repaired-source end-to-end audit","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":false},
-    {"slot":"B20","title":"Whole-paper audit and own-account coordination","workstream":"QFORM","campaign":"AUDIT","pathway":"AUDIT","secondary_keeper_duty":true}
+    {
+      "slot": "B01",
+      "title": "Architecture and claims inventory",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B02",
+      "title": "Memory recall engine",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B03",
+      "title": "Association graph and edges",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B04",
+      "title": "Reflexes and instincts",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B05",
+      "title": "Hooks and delivery",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B06",
+      "title": "Dreaming and consolidation",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B07",
+      "title": "The math brain claim graph",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B08",
+      "title": "Brain-on versus brain-off evidence",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B09",
+      "title": "The paper, claim by claim",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B10",
+      "title": "The paper's mathematics",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B11",
+      "title": "Related work and novelty",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B12",
+      "title": "How to test the brain's strengths more",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B13",
+      "title": "Mistakes and scars",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B14",
+      "title": "Owner orders reaching action",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B15",
+      "title": "Coordination",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B16",
+      "title": "Cost and efficiency",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B17",
+      "title": "Privacy, security and sanitisation",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B18",
+      "title": "Portability and reproducibility",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B19",
+      "title": "Synthesis for publication",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": false
+    },
+    {
+      "slot": "B20",
+      "title": "Gap finder and keeper",
+      "workstream": "BRAIN_AUDIT",
+      "campaign": "AUDIT",
+      "pathway": "AUDIT_READ_ONLY",
+      "secondary_keeper_duty": true
+    }
   ],
-  "assignment_card_rule": "Read assignment_matrix_path and select own account/slot. Every worker audits every repaired-source clause, not only its initial lens, and repeats complete passes. Do not count old-source passes as new-source coverage.",
-  "account04_rule": "All account04 slots audit the repaired paper; B20 must keep all twenty native prompts on the new source, never restore the old three-value pack.",
-  "legacy_assignment_cards": "Preserved historical work, not current authority. No discovery or threshold-improvement role is active.",
+  "assignment_card_rule": "Read directive_path and assignment_matrix_path and select your own account/slot. Audit the brain and the papers about it through your lens, read-only; write only your own report and paper files under the package. Every account covers all twenty lenses.",
+  "account04_rule": "account04 audits like every account, with the adversarial focus in ASSIGNMENTS.json.",
+  "legacy_assignment_cards": "Preserved historical work, not current authority. QFORM-FIVE-270-REPAIRED-AUDIT-20260925 is superseded.",
   "historical_roles_source": "7434051b9081d00a33d76ec9147822c64f933e49:scheduled_tasks/roles.json"
 }
