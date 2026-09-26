@@ -1,4 +1,4 @@
-# Task roster: four accounts, twenty roles each (from the control files, rendered 2026-09-26 14:20)
+# Task roster: four accounts, twenty roles each (from the control files, rendered 2026-09-26 14:35)
 
 Order (2026-09-20 18:37): 80 scheduled tasks running at any time, twenty per account, full time every hour, on the
 highest reasoning each account offers. Control: `fleet.json` desires 4 accounts x 20 tasks = 80; cadence every 60
@@ -9,10 +9,10 @@ The keeper records the actual inventory, exposed settings and capacity errors se
 
 | account | binding | observed enabled | focus |
 |---|---|---|---|
-| account01 | CURRENT_NATIVE_SCHEDULER_NOT_OBSERVED_THIS_UPDATE | not observed | Repeated full repaired-manuscript audits; forward derivation and reverse dependency checks |
-| account02 | CURRENT_NATIVE_SCHEDULER_NOT_OBSERVED_THIS_UPDATE | not observed | Repeated full repaired-manuscript audits; adversarial and boundary cases |
-| account03 | CURRENT_NATIVE_SCHEDULER_NOT_OBSERVED_THIS_UPDATE | not observed | Repeated full repaired-manuscript audits; identities, constants and alternative derivations |
-| account04 | CURRENT_NATIVE_SCHEDULER_PROFILE_OBSERVED | 20 | Mandatory repeated full repaired-manuscript audits; old three-value discovery superseded |
+| account01 | CURRENT_NATIVE_SCHEDULER_NOT_OBSERVED_THIS_UPDATE | not observed | Brain, Math Brain and information-flow audits; evidence with exact source paths, lines and commits |
+| account02 | CURRENT_NATIVE_SCHEDULER_NOT_OBSERVED_THIS_UPDATE | not observed | Brain, Math Brain and information-flow audits; independent re-derivation from underlying data or code |
+| account03 | CURRENT_NATIVE_SCHEDULER_NOT_OBSERVED_THIS_UPDATE | not observed | Brain, Math Brain and information-flow audits; reproduction from a clean reading and outsider perspective |
+| account04 | CURRENT_NATIVE_SCHEDULER_PROFILE_OBSERVED | 20 | Brain, Math Brain and information-flow audits; adversarial examination of strongest claims |
 
 An account is enrolled from inside that account with the instruction in `ONBOARDING.md` (the control repository);
 a label is not a login. The profile observations above are historical configuration metadata; consult current inventory and run evidence for each account.

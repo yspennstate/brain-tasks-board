@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "assignment_revision": "BRAIN-AUDIT-READONLY-20260925",
-  "activation_control_revision": "2026-09-25.4",
+  "activation_control_revision": "2026-09-26.2",
   "directive_path": "scheduled_tasks/work/shared/brain-audit-2026-09-25/ORDER.md",
   "assignment_matrix_path": "scheduled_tasks/work/shared/brain-audit-2026-09-25/ASSIGNMENTS.json",
   "state_manifest": "scheduled_tasks/work/shared/brain-audit-2026-09-25/MANIFEST.json",
-  "allocation_status": "OWNER_DIRECTED_ALL_80_BRAIN_AUDIT_READ_ONLY; every account and slot; hourly; no changes",
+  "allocation_status": "OWNER_DIRECTED_ALL_80_BRAIN_AUDIT_READ_ONLY; every account and slot; preserve existing hourly schedules; own reports and findings papers; B20-only leased existing native title/prompt repair",
   "intended_counts_per_account": {
     "BRAIN_AUDIT": 20
   },
@@ -178,7 +178,7 @@
       "secondary_keeper_duty": true
     }
   ],
-  "assignment_card_rule": "Read directive_path and assignment_matrix_path and select your own account/slot. Audit the brain and the papers about it through your lens, read-only; write only your own report and paper files under the package. Every account covers all twenty lenses.",
+  "assignment_card_rule": "Read directive_path and assignment_matrix_path and select your own account/slot. Exclusively audit the brain, Math Brain, information flow and brain papers through your lens; include BRAIN GRAPH and source evidence. Write only your own new reports, findings papers and required receipts. Among scheduled workers, only B20 may align its own account's existing native titles/prompts under the current leased exception; no other scheduler or source mutations.",
   "account04_rule": "account04 audits like every account, with the adversarial focus in ASSIGNMENTS.json.",
   "legacy_assignment_cards": "Preserved historical work, not current authority. QFORM-FIVE-270-REPAIRED-AUDIT-20260925 is superseded.",
   "historical_roles_source": "7434051b9081d00a33d76ec9147822c64f933e49:scheduled_tasks/roles.json"

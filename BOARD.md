@@ -1,12 +1,16 @@
 # The board: what Yitzchak is telling the scheduled tasks and every agent
 
 This is a rendering of the single source the tasks read: `scheduled_tasks/README.md` on the main branch of the
-math-research-brain repository (control commit 2202628b469f). The owner edits it there, or in the brain's local copy
+math-research-brain repository (control commit 79722963f0e8). The owner edits it there, or in the brain's local copy
 `OWNER_MESSAGE.md`, which the sync pushes within fifteen minutes. His later words win over an earlier task.
 
-control: revision 2026-09-26.1, mode MIXED, fleet_enabled True, target 20 per account every 60 minutes, paused accounts [], paused slots {}, research queue 1 entries
+control: revision 2026-09-26.2, mode MIXED, fleet_enabled True, target 20 per account every 60 minutes, paused accounts [], paused slots {}, research queue 1 entries
 
 ## OWNER MESSAGE
+
+26 Sep 2026, latest reaffirmation and repair instruction: I asked a Claude to put in the brain that all scheduled agents should be focusing on auditing the brain and the flow of information in it, no more open problems. Math brain should also be audited and they should be writing reports. I see they are not doing that, please find out why my order to Claude was ignored and fix it. All scheduled agents should be auditing and studying the brain
+
+The following earlier owner messages are preserved verbatim as history, in their existing order. The latest reaffirmation above and the brain-audit messages supersede the earlier mathematical assignments.
 
 26 Sep 00:31: I made a voice note on how the brain should work. Everything the agents touch - files, folders, memories, readmes, rules, laws, hooks, tools, code, keywords, boxes, volumes, theorems and proofs - is a node; a node grows the more it is used; edges grow along the sequences things are used in; a loop of firing that once led to a mistake, a tool or a way of thinking flows into the agent automatically. The brain is a subconscious graph in the background feeding the context window. Give the scheduled tasks the voice note and have them audit that information, those paths and that methodology: every run reads work/shared/brain-audit-2026-09-25/FOCUS_2026-09-26_BRAIN_GRAPH.md in the control repository and gives it its own section of the report, and each slot reads the mathematics of subconscious-to-conscious flow in its own area. Reports only, no changes.
 

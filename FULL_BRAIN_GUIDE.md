@@ -1,3 +1,13 @@
+# Historical full-brain deployment guide — implementation suspended
+
+**Superseded as an active assignment: 26 September 2026; current control revision 2026-09-26.2.** The owner directs every existing scheduled agent to audit and study the brain, Math Brain and their information flow, and to write reports. Read [CURRENT_OBJECTIVE](CURRENT_OBJECTIVE.md), [OWNER CONTROL and OWNER MESSAGE](README.md), [PROTOCOL](PROTOCOL.md), and the [brain-audit ORDER](work/shared/brain-audit-2026-09-25/ORDER.md) before using this document.
+
+The document below is retained verbatim as historical design and deployment evidence for the audits. Its imperative language, old implementation roles, enrollment/installation steps, code or memory changes, benchmark execution and sample prompts are **not current worker instructions**. Do not deploy them, append their prompt supplements to current tasks, or use their old owner-message examples as live authority. Audit what was claimed, what was actually implemented and what reached an agent; put recommendations and proposed tests in your own brain-audit report.
+
+Audited code, memories, hooks, tests, stores, indexes, benchmarks and source papers remain read-only. Only the existing B20 in its own account has the current limited scheduled permission to align existing native **title and prompt** fields under PROTOCOL's lease; no other scheduler mutation or installation is assigned. Historical observations and platform descriptions below must be identified by their original date and source; they do not prove current capabilities or execution. Later direct owner and platform instructions prevail.
+
+---
+
 # Implement the complete brain in this ChatGPT account
 
 **Owner handoff for an interactive implementation chat and its scheduled workers.**
